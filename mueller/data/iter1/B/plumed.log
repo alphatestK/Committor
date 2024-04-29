@@ -1,0 +1,345 @@
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.9.0-dev (git: 63c6dac30) compiled on Mar  2 2023 at 15:39:27
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /home/pkang@iit.local/program/plumed/plumed2-dev/
+PLUMED: For installed feature, see /home/pkang@iit.local/program/plumed/plumed2-dev//src/config/config.txt
+PLUMED: Molecular dynamics engine: mdrunner_linearexpansion
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 1
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 1
+PLUMED: File suffix: 
+PLUMED: FILE: ../plumed.dat
+PLUMED: Action UNITS
+PLUMED:   with label @0
+PLUMED:   length: nm
+PLUMED:   energy: kj/mol
+PLUMED:   time: ps
+PLUMED:   charge: e
+PLUMED:   mass: amu
+PLUMED:   using natural units
+PLUMED:   inside PLUMED, Boltzmann constant is 1
+PLUMED: Action LOAD
+PLUMED:   with label @1
+PLUMED: Loading shared library ../../../pytorch_model_bias.so
+PLUMED: Here is the new list of available actions
+PLUMED:   ABMD
+PLUMED:   ADAPTIVE_PATH
+PLUMED:   ALPHABETA
+PLUMED:   ALPHARMSD
+PLUMED:   ANGLE
+PLUMED:   ANGLES
+PLUMED:   ANTIBETARMSD
+PLUMED:   AROUND
+PLUMED:   AVERAGE
+PLUMED:   BF_CHEBYSHEV
+PLUMED:   BF_COMBINED
+PLUMED:   BF_COSINE
+PLUMED:   BF_CUBIC_B_SPLINES
+PLUMED:   BF_CUSTOM
+PLUMED:   BF_FOURIER
+PLUMED:   BF_GAUSSIANS
+PLUMED:   BF_LEGENDRE
+PLUMED:   BF_POWERS
+PLUMED:   BF_SINE
+PLUMED:   BF_WAVELETS
+PLUMED:   BIASVALUE
+PLUMED:   BRIDGE
+PLUMED:   CALIBER
+PLUMED:   CAVITY
+PLUMED:   CELL
+PLUMED:   CENTER
+PLUMED:   CENTER_OF_MULTICOLVAR
+PLUMED:   COLLECT_FRAMES
+PLUMED:   COM
+PLUMED:   COMBINE
+PLUMED:   COMMITTOR
+PLUMED:   CONSTANT
+PLUMED:   CONTACTMAP
+PLUMED:   CONVERT_TO_FES
+PLUMED:   COORDINATION
+PLUMED:   COORDINATIONNUMBER
+PLUMED:   CS2BACKBONE
+PLUMED:   CUSTOM
+PLUMED:   DEBUG
+PLUMED:   DENSITY
+PLUMED:   DHENERGY
+PLUMED:   DIHCOR
+PLUMED:   DIMER
+PLUMED:   DIPOLE
+PLUMED:   DISTANCE
+PLUMED:   DISTANCES
+PLUMED:   DISTANCE_FROM_CONTOUR
+PLUMED:   DRMSD
+PLUMED:   DUMPATOMS
+PLUMED:   DUMPCUBE
+PLUMED:   DUMPDERIVATIVES
+PLUMED:   DUMPFORCES
+PLUMED:   DUMPGRID
+PLUMED:   DUMPMASSCHARGE
+PLUMED:   DUMPMULTICOLVAR
+PLUMED:   DUMPPROJECTIONS
+PLUMED:   ECV_CUSTOM
+PLUMED:   ECV_LINEAR
+PLUMED:   ECV_MULTITHERMAL
+PLUMED:   ECV_MULTITHERMAL_MULTIBARIC
+PLUMED:   ECV_UMBRELLAS_FILE
+PLUMED:   ECV_UMBRELLAS_LINE
+PLUMED:   EEFSOLV
+PLUMED:   EFFECTIVE_ENERGY_DRIFT
+PLUMED:   EMMI
+PLUMED:   ENDPLUMED
+PLUMED:   ENERGY
+PLUMED:   ENSEMBLE
+PLUMED:   ERMSD
+PLUMED:   EUCLIDEAN_DISSIMILARITIES
+PLUMED:   EXTENDED_LAGRANGIAN
+PLUMED:   EXTERNAL
+PLUMED:   EXTRACV
+PLUMED:   FAKE
+PLUMED:   FIND_CONTOUR
+PLUMED:   FIND_CONTOUR_SURFACE
+PLUMED:   FIND_SPHERICAL_CONTOUR
+PLUMED:   FIT_TO_TEMPLATE
+PLUMED:   FIXEDATOM
+PLUMED:   FLUSH
+PLUMED:   FOURIER_TRANSFORM
+PLUMED:   FRET
+PLUMED:   FUNCPATHGENERAL
+PLUMED:   FUNCPATHMSD
+PLUMED:   FUNCSUMHILLS
+PLUMED:   GHBFIX
+PLUMED:   GHOST
+PLUMED:   GPROPERTYMAP
+PLUMED:   GRID_TO_XYZ
+PLUMED:   GROUP
+PLUMED:   GYRATION
+PLUMED:   HISTOGRAM
+PLUMED:   INCLUDE
+PLUMED:   INCYLINDER
+PLUMED:   INENVELOPE
+PLUMED:   INPLANEDISTANCES
+PLUMED:   INSPHERE
+PLUMED:   INTEGRATE_GRID
+PLUMED:   INTERPOLATE_GRID
+PLUMED:   JCOUPLING
+PLUMED:   LANDMARK_SELECT_FPS
+PLUMED:   LANDMARK_SELECT_RANDOM
+PLUMED:   LANDMARK_SELECT_STAGED
+PLUMED:   LANDMARK_SELECT_STRIDE
+PLUMED:   LOAD
+PLUMED:   LOCALENSEMBLE
+PLUMED:   LOCAL_AVERAGE
+PLUMED:   LOWER_WALLS
+PLUMED:   MATHEVAL
+PLUMED:   MAXENT
+PLUMED:   MCOLV_COMBINE
+PLUMED:   MCOLV_PRODUCT
+PLUMED:   METAD
+PLUMED:   METAINFERENCE
+PLUMED:   MFILTER_BETWEEN
+PLUMED:   MFILTER_LESS
+PLUMED:   MFILTER_MORE
+PLUMED:   MOLINFO
+PLUMED:   MOVINGRESTRAINT
+PLUMED:   MTRANSFORM_BETWEEN
+PLUMED:   MTRANSFORM_LESS
+PLUMED:   MTRANSFORM_MORE
+PLUMED:   MULTICOLVARDENS
+PLUMED:   MULTI_RMSD
+PLUMED:   NLINKS
+PLUMED:   NOE
+PLUMED:   OPES_EXPANDED
+PLUMED:   OPES_METAD
+PLUMED:   OPES_METAD_EXPLORE
+PLUMED:   OPT_ADAM
+PLUMED:   OPT_AVERAGED_SGD
+PLUMED:   OPT_DUMMY
+PLUMED:   OPT_ROBBINS_MONRO_SGD
+PLUMED:   OUTPUT_ANALYSIS_DATA_TO_COLVAR
+PLUMED:   OUTPUT_ANALYSIS_DATA_TO_PDB
+PLUMED:   PARABETARMSD
+PLUMED:   PATH
+PLUMED:   PATHMSD
+PLUMED:   PBMETAD
+PLUMED:   PCARMSD
+PLUMED:   PCAVARS
+PLUMED:   PCS
+PLUMED:   PIECEWISE
+PLUMED:   PLUMED
+PLUMED:   POSITION
+PLUMED:   PRE
+PLUMED:   PRINT
+PLUMED:   PRINT_DISSIMILARITY_MATRIX
+PLUMED:   PROJECTION_ON_AXIS
+PLUMED:   PROPERTYMAP
+PLUMED:   PUCKERING
+PLUMED:   PYTORCH_MODEL
+PLUMED:   PYTORCH_MODEL_BIAS
+PLUMED:   PYTORCH_MODEL_CUDA
+PLUMED:   RANDOM_EXCHANGES
+PLUMED:   RDC
+PLUMED:   READ
+PLUMED:   READ_DISSIMILARITY_MATRIX
+PLUMED:   RESCALE
+PLUMED:   RESELECT_LANDMARKS
+PLUMED:   RESET_CELL
+PLUMED:   RESTART
+PLUMED:   RESTRAINT
+PLUMED:   REWEIGHT_BIAS
+PLUMED:   REWEIGHT_METAD
+PLUMED:   REWEIGHT_TEMP_PRESS
+PLUMED:   REWEIGHT_WHAM
+PLUMED:   RMSD
+PLUMED:   SAXS
+PLUMED:   SELECT
+PLUMED:   SELECTOR
+PLUMED:   SORT
+PLUMED:   STATS
+PLUMED:   TARGET
+PLUMED:   TD_CHI
+PLUMED:   TD_CHISQUARED
+PLUMED:   TD_CUSTOM
+PLUMED:   TD_EXPONENTIAL
+PLUMED:   TD_EXPONENTIALLY_MODIFIED_GAUSSIAN
+PLUMED:   TD_GAUSSIAN
+PLUMED:   TD_GENERALIZED_EXTREME_VALUE
+PLUMED:   TD_GENERALIZED_NORMAL
+PLUMED:   TD_GRID
+PLUMED:   TD_LINEAR_COMBINATION
+PLUMED:   TD_MULTICANONICAL
+PLUMED:   TD_MULTITHERMAL_MULTIBARIC
+PLUMED:   TD_PRODUCT_COMBINATION
+PLUMED:   TD_PRODUCT_DISTRIBUTION
+PLUMED:   TD_UNIFORM
+PLUMED:   TD_VONMISES
+PLUMED:   TD_WELLTEMPERED
+PLUMED:   TEMPLATE
+PLUMED:   TETRAHEDRALPORE
+PLUMED:   TIME
+PLUMED:   TORSION
+PLUMED:   TORSIONS
+PLUMED:   UNITS
+PLUMED:   UPDATE_IF
+PLUMED:   UPPER_WALLS
+PLUMED:   VES_DELTA_F
+PLUMED:   VES_LINEAR_EXPANSION
+PLUMED:   VES_OUTPUT_BASISFUNCTIONS
+PLUMED:   VES_OUTPUT_FES
+PLUMED:   VES_OUTPUT_TARGET_DISTRIBUTION
+PLUMED:   VOLUME
+PLUMED:   WHAM_HISTOGRAM
+PLUMED:   WHAM_WEIGHTS
+PLUMED:   WHOLEMOLECULES
+PLUMED:   WRAPAROUND
+PLUMED:   XANGLES
+PLUMED:   XDISTANCES
+PLUMED:   XYDISTANCES
+PLUMED:   XYTORSIONS
+PLUMED:   XZDISTANCES
+PLUMED:   XZTORSIONS
+PLUMED:   YANGLES
+PLUMED:   YDISTANCES
+PLUMED:   YXTORSIONS
+PLUMED:   YZDISTANCES
+PLUMED:   YZTORSIONS
+PLUMED:   ZANGLES
+PLUMED:   ZDISTANCES
+PLUMED:   ZXTORSIONS
+PLUMED:   ZYTORSIONS
+PLUMED: Action POSITION
+PLUMED:   with label p
+PLUMED:   for atom 1
+PLUMED:   using periodic boundary conditions
+PLUMED:   added component to this action:  p.x 
+PLUMED:   added component to this action:  p.y 
+PLUMED:   added component to this action:  p.z 
+PLUMED:   WARNING: components will not have the proper periodicity - see manual
+PLUMED: Action PYTORCH_MODEL_BIAS
+PLUMED:   with label q
+PLUMED:   with arguments p.x p.y
+PLUMED: Checking output dimension:
+PLUMED:   added component to this action:  q.node-0 
+PLUMED:   added component to this action:  q.bias-0 
+PLUMED: Number of input: 2 
+PLUMED: Number of outputs: 1 
+PLUMED:   Bibliography: [3][4]
+PLUMED: Action CUSTOM
+PLUMED:   with label mueller
+PLUMED:   with arguments p.x p.y
+PLUMED:   with function : 0.15*(146.7-200*exp(-1*(x-1)^2+0*(x-1)*(y-0)-10*(y-0)^2)-100*exp(-1*(x-0)^2+0*(x-0)*(y-0.5)-10*(y-0.5)^2)-170*exp(-6.5*(x+0.5)^2+11*(x+0.5)*(y-1.5)-6.5*(y-1.5)^2)+15*exp(0.7*(x+1)^2+0.6*(x+1)*(y-1)+0.7*(y-1)^2))
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: 0.15*(((((146.7)-(200*(exp((-1*(square(-1+(x))))-(10*(square(y)))))))-(100*(exp((-1*(square(x)))-(10*(square(-0.5+(y))))))))-(170*(exp(((-6.5*(square(0.5+(x))))+((11*(0.5+(x)))*(-1.5+(y))))-(6.5*(square(-1.5+(y))))))))+(15*(exp(((0.7*(square(1+(x))))+((0.6*(1+(x)))*(-1+(y))))+(0.7*(square(-1+(y))))))))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.15*((((-200*((exp((-1*(square(-1+(x))))-(10*(square(y)))))*(-2*(-1+(x)))))-(100*((exp((-1*(square(x)))-(10*(square(-0.5+(y))))))*(-2*(x)))))-(170*((exp(((-6.5*(square(0.5+(x))))+((11*(0.5+(x)))*(-1.5+(y))))-(6.5*(square(-1.5+(y))))))*((-13*(0.5+(x)))+(11*(-1.5+(y)))))))+(15*((exp(((0.7*(square(1+(x))))+((0.6*(1+(x)))*(-1+(y))))+(0.7*(square(-1+(y))))))*((1.4*(1+(x)))+(0.6*(-1+(y)))))))
+PLUMED:     0.15*((((200*((exp((-1*(square(-1+(x))))-(10*(square(y)))))*(20*(y))))-(-100*((exp((-1*(square(x)))-(10*(square(-0.5+(y))))))*(20*(-0.5+(y))))))-(170*((exp(((-6.5*(square(0.5+(x))))+((11*(0.5+(x)))*(-1.5+(y))))-(6.5*(square(-1.5+(y))))))*((11*(0.5+(x)))-(13*(-1.5+(y)))))))+(15*((exp(((0.7*(square(1+(x))))+((0.6*(1+(x)))*(-1+(y))))+(0.7*(square(-1+(y))))))*((0.6*(1+(x)))+(1.4*(-1+(y)))))))
+PLUMED: Action CUSTOM
+PLUMED:   with label bias
+PLUMED:   with arguments q.bias-0
+PLUMED:   with function : -a
+PLUMED:   with variables : a
+PLUMED:   function as parsed by lepton: -(a)
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     -1
+PLUMED: Action CUSTOM
+PLUMED:   with label biased
+PLUMED:   with arguments mueller bias
+PLUMED:   with function : x+y
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: (x)+(y)
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     1
+PLUMED:     1
+PLUMED: Action BIASVALUE
+PLUMED:   with label potential
+PLUMED:   with arguments biased
+PLUMED:   added component to this action:  potential.bias 
+PLUMED:   added component to this action:  potential.biased_bias 
+PLUMED: Action LOWER_WALLS
+PLUMED:   with label lwall
+PLUMED:   with arguments p.x
+PLUMED:   added component to this action:  lwall.bias 
+PLUMED:   at -1.300000
+PLUMED:   with an offset 0.000000
+PLUMED:   with force constant 1000.000000
+PLUMED:   and exponent 2.000000
+PLUMED:   rescaled 1.000000
+PLUMED:   added component to this action:  lwall.force2 
+PLUMED: Action UPPER_WALLS
+PLUMED:   with label uwall
+PLUMED:   with arguments p.x
+PLUMED:   added component to this action:  uwall.bias 
+PLUMED:   at 1.000000
+PLUMED:   with an offset 0.000000
+PLUMED:   with force constant 1000.000000
+PLUMED:   and exponent 2.000000
+PLUMED:   rescaled 1.000000
+PLUMED:   added component to this action:  uwall.force2 
+PLUMED: Action PRINT
+PLUMED:   with label @10
+PLUMED:   with stride 50
+PLUMED:   with arguments p.x p.y q.node-0 q.bias-0 bias mueller bias
+PLUMED:   on file COLVAR
+PLUMED:   with format  %g
+PLUMED: Action ENDPLUMED
+PLUMED:   with label @11
+PLUMED: END FILE: ../plumed.dat
+PLUMED: Timestep: 0.005000
+PLUMED: KbT: 1.000000
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED:   [3] Bonati, Rizzi and Parrinello, J. Phys. Chem. Lett. 11, 2998-3004 (2020)
+PLUMED:   [4] Trizio and Parrinello, J. Phys. Chem. Lett. 12, 8621-8626 (2021)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1   449.125750   449.125750   449.125750   449.125750
+PLUMED: 1 Prepare dependencies                        500001     0.716708     0.000001     0.000001     0.028228
+PLUMED: 2 Sharing data                                500001     0.919185     0.000002     0.000001     0.033402
+PLUMED: 3 Waiting for data                            500001     0.247395     0.000000     0.000000     0.028011
+PLUMED: 4 Calculating (forward loop)                  500001   439.395568     0.000879     0.000374     0.092462
+PLUMED: 5 Applying (backward loop)                    500001     4.525892     0.000009     0.000004     0.033395
+PLUMED: 6 Update                                      500001     0.317870     0.000001     0.000000     0.020013
