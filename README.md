@@ -10,3 +10,4 @@ Each folder contains the input data for the different systems presented in the m
 ├── dasa
 └── chignolin
 ```
+And the plugin folder contains the cpp patch for the bias interface in plumed.
