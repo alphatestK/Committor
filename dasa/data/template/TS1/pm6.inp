@@ -1,0 +1,80 @@
+&GLOBAL
+  PROJECT dasa 
+  RUN_TYPE MD
+  PRINT_LEVEL SILENT 
+&END GLOBAL
+
+!&EXT_RESTART
+!RESTART_FILE_NAME dasa.restart
+!&END
+
+&MOTION
+  &MD
+    ENSEMBLE NVT
+    STEPS 2000000
+    TIMESTEP 0.5
+    TEMPERATURE 300
+   &THERMOSTAT
+        &CSVR
+        TIMECON 100
+        &END
+   &END THERMOSTAT
+  &END MD
+  &PRINT
+     &VELOCITIES OFF
+     &END
+     &FORCES
+      &EACH
+         MD 4000
+      &END
+     &END
+     &TRAJECTORY
+      &EACH
+         MD 20
+      &END
+     &END
+     &RESTART
+      &EACH
+          MD 20000
+      &END
+     &END
+     &RESTART_HISTORY
+       &EACH
+          MD 50000
+       &END
+     &END
+  &END PRINT
+
+ &FREE_ENERGY
+    &METADYN
+      USE_PLUMED .TRUE.
+      PLUMED_INPUT_FILE ../plumed.dat
+    &END METADYN
+  &END FREE_ENERGY
+
+&END MOTION
+
+&FORCE_EVAL
+  METHOD Quickstep
+  &DFT
+    &QS
+      METHOD PM6
+    &END QS
+    &SCF
+    SCF_GUESS ATOMIC
+ #   SCF_GUESS RESTART
+    &END SCF
+  &END DFT
+  &SUBSYS
+    &CELL
+      ABC 25.0 25.0 25.0
+      PERIODIC NONE
+    &END CELL
+
+ &TOPOLOGY
+      COORD_FILE_FORMAT XYZ 
+      COORD_FILE_NAME geom.xyz
+    &END TOPOLOGY
+
+  &END SUBSYS
+&END FORCE_EVAL
