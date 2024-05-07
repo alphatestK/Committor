@@ -79,9 +79,8 @@ cospsi: MATHEVAL ARG=psi FUNC=cos(x) PERIODIC=NO
 sintheta: MATHEVAL ARG=theta FUNC=sin(x) PERIODIC=NO
 costheta: MATHEVAL ARG=theta FUNC=cos(x) PERIODIC=NO
 
-DUMPFORCES ARG=sinphi,cosphi,sinpsi,cospsi,sintheta,costheta STRIDE=500 FILE=forces 
- 
-q: PYTORCH_MODEL_BIAS FILE=./model_committor_cycle4.pt ARG=sinphi,cosphi,sinpsi,cospsi,sintheta,costheta ALPHA=-2
+#Warning: In this stage the bias interface was slightly different to the final version.(But the behaviors are same.) In order to remain consistent with the data we provide, here we use the old interface.
+q: PYTORCH_MODEL_BIAS FILE=./model_committor_phipsitheta.pt ARG=sinphi,cosphi,sinpsi,cospsi,sintheta,costheta ALPHA=-2
 
 potential: BIASVALUE ARG=q.bias-0
 
