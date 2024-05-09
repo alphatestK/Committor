@@ -2,10 +2,10 @@
 
 # load interface for bias computation
 #LOAD FILE=../../../pytorch_model_bias.cpp
-LOAD FILE=../../../pytorch_model_bias.so
+LOAD FILE=./pytorch_model_bias.so
 
 #generated with gmx editconf -f topol.tpr -o reference.pdb, see https://www.plumed.org/doc-v2.7/user-doc/html/_m_o_l_i_n_f_o.html
-MOLINFO MOLTYPE=protein STRUCTURE=../chignolin-ref.pdb
+MOLINFO MOLTYPE=protein STRUCTURE=./chignolin-ref.pdb
 WHOLEMOLECULES ENTITY0=1-166
 
 # Select Calpha
@@ -13,7 +13,7 @@ PROTEIN: GROUP ATOMS=1-166
 CA: GROUP ATOMS=5,26,47,61,73,88,102,109,123,147
 
 # RMSD
-rmsd_ca: RMSD REFERENCE=../chignolin-ca.pdb TYPE=OPTIMAL
+rmsd_ca: RMSD REFERENCE=./chignolin-ca.pdb TYPE=OPTIMAL
 
 # END-TO-END DISTANCE
 end: DISTANCE ATOMS=5,147
@@ -132,7 +132,7 @@ cont45: COORDINATION GROUPA=123 GROUPB=147 SWITCH={RATIONAL D_0=0.0 R_0=0.80 NN=
 cell: CELL
 
 
-q: PYTORCH_MODEL_BIAS FILE=../model.pt ARG=x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20,x21,x22,x23,x24,x25,x26,x27,x28,x29,x30,x31,x32,x33,x34,x35,x36,x37,x38,x39,x40,x41,x42,x43,x44,x45 LAMBDA=1.8 EPSILON=1e-7
+q: PYTORCH_MODEL_BIAS FILE=../../models/model.pt ARG=x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x19,x20,x21,x22,x23,x24,x25,x26,x27,x28,x29,x30,x31,x32,x33,x34,x35,x36,x37,x38,x39,x40,x41,x42,x43,x44,x45 LAMBDA=1.8 EPSILON=1e-7
 
 # this is the total bias
 bias: CUSTOM ARG=q.bias-0 var=a PERIODIC=NO FUNC=-a

@@ -2,12 +2,12 @@
 UNITS NATURAL
 
 # load interface for bias computation
-#LOAD FILE=../../../pytorch_model_bias.cpp
-LOAD FILE=../../../pytorch_model_bias.so
+#LOAD FILE=./pytorch_model_bias.cpp
+LOAD FILE=./pytorch_model_bias.so
 
 p: POSITION ATOM=1
 
-q: PYTORCH_MODEL_BIAS FILE=../../model_1.pt ARG=p.x,p.y LAMBDA=1.0 EPSILON=1e-7
+q: PYTORCH_MODEL_BIAS FILE=../../models/model_1.pt ARG=p.x,p.y LAMBDA=1.0 EPSILON=1e-7
 
 mueller: CUSTOM ARG=p.x,p.y PERIODIC=NO ...
   FUNC=0.15*(146.7-200*exp(-1*(x-1)^2+0*(x-1)*(y-0)-10*(y-0)^2)-100*exp(-1*(x-0)^2+0*(x-0)*(y-0.5)-10*(y-0.5)^2)-170*exp(-6.5*(x+0.5)^2+11*(x+0.5)*(y-1.5)-6.5*(y-1.5)^2)+15*exp(0.7*(x+1)^2+0.6*(x+1)*(y-1)+0.7*(y-1)^2))
