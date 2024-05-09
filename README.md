@@ -12,4 +12,4 @@ The following folders contains the simulation setup, iterative training data, an
 ```
 And the plugin folder contains the cpp patch for the bias interface in plumed.
 
-The definition and training of NN-based committor model is available through the [mlcolvar](https://github.com/luigibonati/mlcolvar/) library, a simple tutorial on Mueller-Brown potential could be found in [/docs/notebooks/tutorials/adv_committor.ipynb](https://github.com/luigibonati/mlcolvar/blob/main/docs/notebooks/tutorials/adv_committor.ipynb)
+The definition and training of NN-based committor model is available through the [mlcolvar](https://github.com/luigibonati/mlcolvar/) library. A simple tutorial on Mueller-Brown potential could be found in [/docs/notebooks/tutorials/adv_committor.ipynb](https://github.com/luigibonati/mlcolvar/blob/main/docs/notebooks/tutorials/adv_committor.ipynb)
