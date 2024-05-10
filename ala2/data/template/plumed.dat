@@ -1,7 +1,7 @@
 # vim:ft=plumed
 
-#LOAD FILE=./pytorch_model_bias.cpp
-LOAD FILE=./pytorch_model_bias.so
+LOAD FILE=./pytorch_model_bias.cpp
+#LOAD FILE=./pytorch_model_bias.so
 
 MOLINFO STRUCTURE=../input.ala2.pdb
 

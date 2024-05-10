@@ -6,8 +6,8 @@
 UNITS LENGTH=A
 
 # load interface for bias computation
-#LOAD FILE=../../../pytorch_model_bias.cpp
-LOAD FILE=./pytorch_model_bias.so
+LOAD FILE=./pytorch_model_bias.cpp
+#LOAD FILE=./pytorch_model_bias.so
 
 ene: ENERGY
 cell: CELL

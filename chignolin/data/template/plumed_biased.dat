@@ -1,8 +1,8 @@
 # vim: ft=plumed
 
 # load interface for bias computation
-#LOAD FILE=../../../pytorch_model_bias.cpp
-LOAD FILE=./pytorch_model_bias.so
+LOAD FILE=./pytorch_model_bias.cpp
+#LOAD FILE=./pytorch_model_bias.so
 
 #generated with gmx editconf -f topol.tpr -o reference.pdb, see https://www.plumed.org/doc-v2.7/user-doc/html/_m_o_l_i_n_f_o.html
 MOLINFO MOLTYPE=protein STRUCTURE=./chignolin-ref.pdb
